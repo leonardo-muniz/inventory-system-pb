@@ -1,0 +1,16 @@
+services:
+  inventory-app:
+    build: .
+    container_name: inventory-system-container
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      # Se quiser que o banco H2 persista os dados fora do container:
+      - SPRING_DATASOURCE_URL=jdbc:h2:file:/data/inventorydb
+    volumes:
+      - inventory-data:/data
+    restart: unless-stopped
+
+volumes:
+  inventory-data:
