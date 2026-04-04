@@ -5141,3 +5141,289 @@ Consider renaming one of the beans or enabling overriding by setting spring.main
 2026-03-30 01:05:43 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-03-30 01:05:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2026-03-30 01:05:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-04 17:21:22 [main] INFO  c.l.InventorySystemApplication - Starting InventorySystemApplication using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:22 [main] INFO  c.l.InventorySystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-04 17:21:23 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 63 ms. Found 1 JPA repository interface.
+2026-04-04 17:21:24 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-04 17:21:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.45.Final
+2026-04-04 17:21:24 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-04 17:21:24 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-04 17:21:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-04 17:21:25 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:inventory_db user=SA
+2026-04-04 17:21:25 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-04 17:21:25 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-04 17:21:25 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-04 17:21:26 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-04 17:21:26 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:27 [main] INFO  c.l.InventorySystemApplication - Started InventorySystemApplication in 6.395 seconds (process running for 7.738)
+2026-04-04 17:21:28 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leonardomuniz.inventorysystem.controller.ProductRestControllerTest]: ProductRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-04 17:21:28 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leonardomuniz.InventorySystemApplication for test class com.leonardomuniz.inventorysystem.controller.ProductRestControllerTest
+2026-04-04 17:21:28 [main] INFO  c.l.i.c.ProductRestControllerTest - Starting ProductRestControllerTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:28 [main] DEBUG c.l.i.c.ProductRestControllerTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:28 [main] INFO  c.l.i.c.ProductRestControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:30 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-04-04 17:21:30 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-04-04 17:21:30 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-04-04 17:21:30 [main] INFO  c.l.i.c.ProductRestControllerTest - Started ProductRestControllerTest in 1.229 seconds (process running for 10.151)
+2026-04-04 17:21:30 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leonardomuniz.inventorysystem.controller.ProductControllerTest]: ProductControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-04 17:21:30 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leonardomuniz.InventorySystemApplication for test class com.leonardomuniz.inventorysystem.controller.ProductControllerTest
+2026-04-04 17:21:30 [main] INFO  c.l.i.c.ProductControllerTest - Starting ProductControllerTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:30 [main] DEBUG c.l.i.c.ProductControllerTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:30 [main] INFO  c.l.i.c.ProductControllerTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:30 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-04-04 17:21:30 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-04-04 17:21:30 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-04-04 17:21:30 [main] INFO  c.l.i.c.ProductControllerTest - Started ProductControllerTest in 0.325 seconds (process running for 10.997)
+2026-04-04 17:21:31 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leonardomuniz.inventorysystem.integration.ProductServiceIntegrationTest]: ProductServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-04 17:21:31 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leonardomuniz.InventorySystemApplication for test class com.leonardomuniz.inventorysystem.integration.ProductServiceIntegrationTest
+2026-04-04 17:21:31 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Starting ProductServiceIntegrationTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:31 [main] DEBUG c.l.i.i.ProductServiceIntegrationTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:31 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-04 17:21:32 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2026-04-04 17:21:32 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-04 17:21:32 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-04 17:21:32 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-04 17:21:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-04-04 17:21:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection conn10: url=jdbc:h2:mem:inventory_db user=SA
+2026-04-04 17:21:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-04-04 17:21:32 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-04 17:21:32 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-04 17:21:32 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-04 17:21:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:32 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:inventory_db'
+2026-04-04 17:21:32 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Started ProductServiceIntegrationTest in 1.183 seconds (process running for 12.911)
+2026-04-04 17:21:32 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-04 17:21:32 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-04 17:21:32 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-04-04 17:21:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-04-04 17:21:32 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Starting ProductServiceIntegrationTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:32 [main] DEBUG c.l.i.i.ProductServiceIntegrationTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:32 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-04 17:21:33 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-04-04 17:21:33 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-04 17:21:33 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-04 17:21:33 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-04 17:21:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-04-04 17:21:33 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection conn20: url=jdbc:h2:mem:inventory_db user=SA
+2026-04-04 17:21:33 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-04-04 17:21:33 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-04 17:21:33 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-04 17:21:33 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-04 17:21:33 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:33 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:inventory_db'
+2026-04-04 17:21:33 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Started ProductServiceIntegrationTest in 0.753 seconds (process running for 13.679)
+2026-04-04 17:21:33 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-04 17:21:33 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-04 17:21:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown initiated...
+2026-04-04 17:21:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Shutdown completed.
+2026-04-04 17:21:34 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Starting ProductServiceIntegrationTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:34 [main] DEBUG c.l.i.i.ProductServiceIntegrationTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:34 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-04 17:21:34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-04-04 17:21:34 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-04 17:21:34 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-04 17:21:34 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-04 17:21:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Starting...
+2026-04-04 17:21:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-4 - Added connection conn30: url=jdbc:h2:mem:inventory_db user=SA
+2026-04-04 17:21:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Start completed.
+2026-04-04 17:21:34 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-04 17:21:34 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-04 17:21:34 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-04 17:21:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:34 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:inventory_db'
+2026-04-04 17:21:34 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Started ProductServiceIntegrationTest in 0.546 seconds (process running for 14.646)
+2026-04-04 17:21:34 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-04 17:21:34 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-04 17:21:34 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown initiated...
+2026-04-04 17:21:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-4 - Shutdown completed.
+2026-04-04 17:21:34 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Starting ProductServiceIntegrationTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:34 [main] DEBUG c.l.i.i.ProductServiceIntegrationTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:34 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-04 17:21:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-04-04 17:21:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-04 17:21:35 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-04 17:21:35 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-04 17:21:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Starting...
+2026-04-04 17:21:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-5 - Added connection conn40: url=jdbc:h2:mem:inventory_db user=SA
+2026-04-04 17:21:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Start completed.
+2026-04-04 17:21:35 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-04 17:21:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-04 17:21:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-04 17:21:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:35 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:inventory_db'
+2026-04-04 17:21:35 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Started ProductServiceIntegrationTest in 0.503 seconds (process running for 15.432)
+2026-04-04 17:21:35 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-04 17:21:35 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-04 17:21:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown initiated...
+2026-04-04 17:21:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-5 - Shutdown completed.
+2026-04-04 17:21:35 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Starting ProductServiceIntegrationTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:35 [main] DEBUG c.l.i.i.ProductServiceIntegrationTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:35 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-04 17:21:35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-04-04 17:21:35 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-04 17:21:35 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-04 17:21:35 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-04 17:21:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Starting...
+2026-04-04 17:21:35 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-6 - Added connection conn47: url=jdbc:h2:mem:inventory_db user=SA
+2026-04-04 17:21:35 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Start completed.
+2026-04-04 17:21:35 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-04 17:21:35 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-04 17:21:35 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-04 17:21:35 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:35 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:inventory_db'
+2026-04-04 17:21:35 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Started ProductServiceIntegrationTest in 0.492 seconds (process running for 15.98)
+2026-04-04 17:21:35 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-04 17:21:35 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-04 17:21:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown initiated...
+2026-04-04 17:21:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-6 - Shutdown completed.
+2026-04-04 17:21:36 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Starting ProductServiceIntegrationTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:36 [main] DEBUG c.l.i.i.ProductServiceIntegrationTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:36 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-04 17:21:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5 ms. Found 1 JPA repository interface.
+2026-04-04 17:21:36 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-04 17:21:36 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-04 17:21:36 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-04 17:21:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Starting...
+2026-04-04 17:21:36 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-7 - Added connection conn54: url=jdbc:h2:mem:inventory_db user=SA
+2026-04-04 17:21:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Start completed.
+2026-04-04 17:21:36 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-04 17:21:36 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-04 17:21:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-04 17:21:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:36 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:inventory_db'
+2026-04-04 17:21:36 [main] INFO  c.l.i.i.ProductServiceIntegrationTest - Started ProductServiceIntegrationTest in 0.453 seconds (process running for 16.499)
+2026-04-04 17:21:36 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-04 17:21:36 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-04 17:21:36 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leonardomuniz.inventorysystem.integration.ProductHttpIntegrationTest]: ProductHttpIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-04-04 17:21:36 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leonardomuniz.InventorySystemApplication for test class com.leonardomuniz.inventorysystem.integration.ProductHttpIntegrationTest
+2026-04-04 17:21:36 [main] INFO  c.l.i.i.ProductHttpIntegrationTest - Starting ProductHttpIntegrationTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:36 [main] DEBUG c.l.i.i.ProductHttpIntegrationTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:36 [main] INFO  c.l.i.i.ProductHttpIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-04 17:21:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-04-04 17:21:36 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-04 17:21:36 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-04 17:21:36 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-04 17:21:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Starting...
+2026-04-04 17:21:36 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-8 - Added connection conn64: url=jdbc:h2:mem:inventory_db user=SA
+2026-04-04 17:21:36 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Start completed.
+2026-04-04 17:21:36 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-04 17:21:36 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-04 17:21:36 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-04 17:21:36 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:36 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:inventory_db'
+2026-04-04 17:21:36 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-04-04 17:21:36 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-04-04 17:21:36 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2026-04-04 17:21:37 [main] INFO  c.l.i.i.ProductHttpIntegrationTest - Started ProductHttpIntegrationTest in 0.475 seconds (process running for 17.006)
+2026-04-04 17:21:37 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-04 17:21:37 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-04 17:21:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown initiated...
+2026-04-04 17:21:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-8 - Shutdown completed.
+2026-04-04 17:21:37 [main] INFO  c.l.i.i.ProductHttpIntegrationTest - Starting ProductHttpIntegrationTest using Java 25.0.3-ea with PID 46669 (started by leonardomuniz in /home/leonardomuniz/Projects/inventory-system-pb)
+2026-04-04 17:21:37 [main] DEBUG c.l.i.i.ProductHttpIntegrationTest - Running with Spring Boot v3.5.13, Spring v6.2.17
+2026-04-04 17:21:37 [main] INFO  c.l.i.i.ProductHttpIntegrationTest - No active profile set, falling back to 1 default profile: "default"
+2026-04-04 17:21:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-04 17:21:37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4 ms. Found 1 JPA repository interface.
+2026-04-04 17:21:37 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-04 17:21:37 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-04 17:21:37 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-04 17:21:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Starting...
+2026-04-04 17:21:37 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-9 - Added connection conn70: url=jdbc:h2:mem:inventory_db user=SA
+2026-04-04 17:21:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Start completed.
+2026-04-04 17:21:37 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-04 17:21:37 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-9)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-04 17:21:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-04 17:21:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:37 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:inventory_db'
+2026-04-04 17:21:37 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2026-04-04 17:21:37 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2026-04-04 17:21:37 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2026-04-04 17:21:37 [main] INFO  c.l.i.i.ProductHttpIntegrationTest - Started ProductHttpIntegrationTest in 0.466 seconds (process running for 17.503)
+2026-04-04 17:21:37 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-04-04 17:21:37 [main] WARN  o.s.c.events.SpringDocAppInitializer - SpringDoc /products/swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-04-04 17:21:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-04 17:21:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-04 17:21:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown initiated...
+2026-04-04 17:21:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-7 - Shutdown completed.
+2026-04-04 17:21:37 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-04 17:21:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown initiated...
+2026-04-04 17:21:37 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-9 - Shutdown completed.
