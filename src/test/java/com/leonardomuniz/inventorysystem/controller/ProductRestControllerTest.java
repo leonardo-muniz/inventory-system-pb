@@ -71,4 +71,12 @@ class ProductRestControllerTest {
         mockMvc.perform(delete("/api/products/1"))
                 .andExpect(status().isNoContent());
     }
+
+    @Test
+    @DisplayName("Deve redirecionar da raiz para a listagem de produtos")
+    void shouldRedirectFromRoot() throws Exception {
+        mockMvc.perform(get("/"))
+                .andExpect(status().is3xxRedirection())
+                .andExpect(redirectedUrl("/products"));
+    }
 }

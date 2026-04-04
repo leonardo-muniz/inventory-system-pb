@@ -10,7 +10,7 @@ on:
 
 permissions:
   id-token: write
-  contents: write
+  contents: read
   security-events: write
 
 jobs:
@@ -59,66 +59,43 @@ jobs:
           retention-days: 7
 
   # ==========================================
-  # JOB 2: SIMULATED DEV DEPLOY LOGS (Req. 3)
+  # JOB 2: VALIDATE DEV (Main Branch)
   # ==========================================
-  deploy-dev-logs:
-    name: Monitor Railway DEV Deployment
+  validate-dev:
+    name: Validate Dev Environment
     needs: build-and-sast
     runs-on: ubuntu-latest
-    environment: dev
+    environment: pb-tp5 / main
     steps:
-      - name: Custom Deploy Logs
+      - name: Health Check Dev
         run: |
-          echo "::notice title=Railway DEV::Railway is automatically deploying the 'main' branch."
-          echo "Deployment initiated on Railway DEV environment."
+          echo "Checking Dev URL: ${{ vars.DEV_URL }}"
+          sleep 30
+          curl -s --head --fail ${{ vars.DEV_URL }} || exit 1
 
   # ==========================================
-  # JOB 3: POST-DEPLOY TESTS / SELENIUM (Req. 2 & 3)
+  # JOB 3: VALIDATE STAGING (Staging Branch)
   # ==========================================
-  post-deploy-e2e:
-    name: Selenium E2E Tests
-    needs: deploy-dev-logs
+  validate-staging:
+    name: Validate Staging Environment
+    needs: build-and-sast
     runs-on: ubuntu-latest
+    environment: pb-tp5 / staging
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Run Selenium Tests against DEV environment
-        env:
-          TARGET_URL: ${{ vars.DEV_URL }}
+      - name: Health Check Staging
         run: |
-          echo "Simulating Selenium execution in DEV environment ($TARGET_URL)..."
-
-      - name: Generate E2E Summary
-        if: always()
-        run: |
-          echo "### 🌐 Post-Deploy Validation (Selenium)" >> $GITHUB_STEP_SUMMARY
-          echo "Automated tests executed in Dev environment validating the UI integrity." >> $GITHUB_STEP_SUMMARY
+          echo "Checking Staging URL: ${{ vars.STAGING_URL }}"
+          sleep 30
+          curl -s --head --fail ${{ vars.STAGING_URL }} || exit 1
 
   # ==========================================
-  # JOB 4: PROMOTE TO PRODUCTION (Req. 3)
+  # JOB 4: FINAL QUALITY GATE (Manual)
   # ==========================================
-  deploy-prod:
-    name: Promote to Production Branch
-    needs: post-deploy-e2e
+  quality-gate:
+    name: Final Manual Approval
+    needs: [validate-dev, validate-staging]
     runs-on: ubuntu-latest
-    environment: prod
-
+    environment: pb-tp5 / staging
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Git Config & Merge to Production
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          
-          # Cria a branch production se não existir, senão faz o merge
-          git checkout production || git checkout -b production
-          git merge main --no-ff -m "Promoting to Production after Manual Approval [skip ci]"
-          git push origin production
-
-      - name: Custom Deploy Logs
-        run: echo "::notice title=Deploy PROD::Push to 'production' branch completed. Railway PROD deployment initiated."
+      - name: Success Signal
+        run: echo "::notice title=Quality Gate::All environments validated and approved manually."
