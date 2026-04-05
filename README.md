@@ -7,6 +7,8 @@
 
 A professional inventory management system developed as part of the Software Engineering curriculum. This project demonstrates a complete CI/CD lifecycle, automated testing, and cloud deployment strategies.
 
+### **Relatório:** [Clique aqui para acessar o relatório](RELATORIO.md)
+
 ## 🌐 Live Demo & Environments
 
 The project is deployed across multiple environments to simulate a real-world release cycle:
